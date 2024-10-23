@@ -5,24 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
     <!-- Menampung Logo, Icon & Navbar -->
-    <header></header>
+    <header class="main-header">
+
     <!-- Logo -->
-    <div></div>
+    <div class="logo-icon"></div>
     
-    <nav>
-        <a>Home</a>
-        <a>Profile</a>
-        <a>Portfolio</a>
-        <a>Message Us</a>
-    </nav>
+    <!-- Navigasi -->
+        <nav>
+            <a href="#section-home">Home</a>
+            <a href="#section-profile">Profile</a>
+            <a href="#section-portfolio">Portfolio</a>
+            <a href="#section-message-us">Message Us</a>
+        </nav>
+    </header>
+
+    <hr/>
 
     <!-- Menampung Konten -->
-    <main></main>
+    <main>
+        <!-- Section Home -->
+        <section id="section-home">
+            <header>
+                <h1>Hi User, Welcome to My website</h1>
+            </header>
+
+            <article>
+                <header>
+                    <h1>Ini adalah latihan membuat website saya sendiri di RevoU.</h1>
+                </header>
+                
+                <!-- Foto Banner -->
+                <div class="foto-banner">
+                    
+                </div>
+            </article>
+        </section>\
+
+        <hr/>
+
+        <!-- Section Profile -->
+        <section id="section-profile">
+            <header>
+                <h1>Profile</h1>
+            </header>
+
+            <article>
+                <div class="article"></div>
+            </article>
+        </section>
+
+        <hr/>
+        
+        <!-- Section Portfolio -->
+        <section id="section-portfolio">
+            <header>
+                <h1>Portfolio</h1>
+            </header>
+
+            <article>
+                <div class="article"></div>
+            </article>
+        </section>
+
+        <hr/>
+
+        <!-- Section Message Us -->
+        <section id="section-message-us">
+            <header>
+                <h1>Message Us</h1>
+            </header>
+
+            <div class="message-container">
+                <form action="$_GET" method="dialog" id="dialog">
+                    <label for="name">Nama :</label>
+                    <input type="text" name="nama" id="nama">
+                    <br>
+                    <label for="name">Tanggal Lahir :</label>
+                    <input type="date" name="tgl" id="tgl">
+                    <br>
+                    <label for="jenis-kelamin">Jenis Kelamin :</label>
+                    <input type="radio" id="jenis-kelamin" name="jenis-kelamin" value="HTML">
+                    <label for="css">Laki-laki</label>
+                    <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+                    <label for="perempuan">Perempuan</label>
+                    <br>
+                    <label for="pesan">Pesan :</label>
+                    <input type="text-area" name="pesan" id="pesan">
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+                
+            
+                <div id="output">
+                
+                </div>
+            </div>
+
+            
+        </section>
+
+        <hr/>
+        
+
+    </main>
+
 
     <!-- Menampung Copyright -->
-    <footer></footer>
+    <footer>
+        <div>G. Ingga Pratama © 2024</div>
+    </footer>
 </body>
 </html>

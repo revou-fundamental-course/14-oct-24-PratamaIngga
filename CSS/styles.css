@@ -1,1 +1,48 @@
 /* ini CSS */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* https://dummyimage.com/50x50/000/fff.jpg&text=Ingga */
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(../ASSETS/logo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.foto-banner {
+    height: 180px;
+    background-image: url(https://picsum.photos/1000);
+    background-size: cover;
+    background-position: center;
+}
+
+.article {
+    height: 300px;
+}
+
+.message-container {
+    display: flex;
+}
+
+footer>div {
+    text-align: center;
+    font-family: cursive;
+}
