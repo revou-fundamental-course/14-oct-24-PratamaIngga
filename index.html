@@ -39,11 +39,16 @@
                 </header>
                 
                 <!-- Foto Banner -->
-                <div class="foto-banner">
-                    
-                </div>
+                <div class="foto-banner foto-1"></div>
+                <div class="foto-banner foto-2"></div>
+                <div class="foto-banner foto-3"></div>
             </article>
-        </section>\
+
+            <!-- <button type="button" onclick="nextSlide(1)">Slide</button> -->
+
+            <button type="button" onclick="nextSlide(-1)">Prev</button>
+            <button type="button" onclick="nextSlide(1)">Next</button>
+        </section>
 
         <hr/>
 
@@ -78,34 +83,18 @@
             <header>
                 <h1>Message Us</h1>
             </header>
-
             <div class="message-container">
-                <form action="$_GET" method="dialog" id="dialog">
-                    <label for="name">Nama :</label>
-                    <input type="text" name="nama" id="nama">
-                    <br>
-                    <label for="name">Tanggal Lahir :</label>
-                    <input type="date" name="tgl" id="tgl">
-                    <br>
-                    <label for="jenis-kelamin">Jenis Kelamin :</label>
-                    <input type="radio" id="jenis-kelamin" name="jenis-kelamin" value="HTML">
-                    <label for="css">Laki-laki</label>
-                    <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
-                    <label for="perempuan">Perempuan</label>
-                    <br>
-                    <label for="pesan">Pesan :</label>
-                    <input type="text-area" name="pesan" id="pesan">
-                    <br>
-                    <button type="submit">Submit</button>
+                <form>
+                    <div>
+                        <label for="input-username">Username:</label>
+                        <input id="input-username" type="text">
+                    </div>
+                    <button type="button" onclick='validateForm()'>Submit</button>
                 </form>
-                
-            
-                <div id="output">
-                
-                </div>
+            <div>
+                <p>Result: <span id="result"></span></p>
             </div>
-
-            
+        </div>
         </section>
 
         <hr/>
@@ -118,5 +107,7 @@
     <footer>
         <div>G. Ingga Pratama © 2024</div>
     </footer>
+
+    <script src="JS/script.js"></script>
 </body>
 </html>

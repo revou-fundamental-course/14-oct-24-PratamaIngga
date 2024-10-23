@@ -29,9 +29,19 @@ nav>a {
 
 .foto-banner {
     height: 180px;
-    background-image: url(https://picsum.photos/1000);
+    /* background-image: url(https://picsum.photos/1000); */
     background-size: cover;
     background-position: center;
+}
+
+.foto-1 {
+    background-image: url(../ASSETS/logo.jpg);
+}
+.foto-2 {
+    background-image: url(https://picsum.photos/1000);
+}
+.foto-3 {
+    background-image: url(https://picsum.photos/750);
 }
 
 .article {
@@ -40,9 +50,21 @@ nav>a {
 
 .message-container {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#result {
+    margin: 0px;
 }
 
 footer>div {
     text-align: center;
     font-family: cursive;
+}
+
+@media only screen and (max-width: 480px) {
+    .main-header {
+     flex-direction: column;
+    }
 }
